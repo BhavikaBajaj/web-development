@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form</title>
+  </head>
+  <body>
+    <form>
+      UserName:
+      <input type="text" placeholder="your name" required="true" /><br />
+      Password: <input type="password" />
+    </form>
+    <hr />
+    <hr />
+    <form action="/contact">
+      UserName:
+      <input type="text" placeholder="your name" required="true" /><br />
+      Password: <input type="password" /><br />
+      <input type="submit" />
+    </form>
+    <hr />
+    <hr />
+    <form action="/contact">
+      <label for="username">Username:</label>
+      <input type="text" id="username" name="username" required="true" /><br />
+      <label for="password">Password:</label>
+      <input type="password" id="password" /><br />
+      Date: <input type="date" /><br />
+      File: <input type="file" /><br />
+      Color: <input type="color" /><br />
+      Range: <input type="range" /><br />
+      Button: <input type="button" value="Poke me" /><br />
+      Submit: <input type="submit" /><br />
+      <hr />
+      <hr />
+      <label for="Male">Male: </label>
+      <input type="radio" id="Male" name="gender" value="male" /><br />
+      <label for="Female">Female: </label>
+      <input type="radio" id="Female" name="gender" value="female" /><br />
+      <label for="Other">Other: </label>
+      <input type="radio" id="Other" name="gender" value="other" /><br />
+      <hr />
+      <hr />
+      <label for="C">C: </label>
+      <input type="checkbox" id="C" name="language" value="c" /><br />
+      <label for="C++">C++: </label>
+      <input type="checkbox" id="C++" name="language" value="c++" /><br />
+      <label for="Java">Java: </label>
+      <input type="checkbox" id="Java" name="language" value="java" /><br />
+      <hr />
+      <hr />
+      <label for="country">Select Country: </label>
+      <select name="country" id="country">
+        <option value="India">India</option>
+        <option value="USA">USA</option>
+        <option value="UK">UK</option>
+        <option value="other">Other</option>
+      </select>
+      <hr />
+      <hr />
+      <textarea
+        name="story"
+        id="story"
+        cols="20"
+        rows="4"
+        placeholder="Write your story"
+      ></textarea>
+    </form>
+  </body>
+</html>
