@@ -1,0 +1,51 @@
+nav {
+  background-color: cyan;
+}
+#container {
+  display: flex;
+  justify-content: space-around;
+}
+nav a {
+  color: darkblue;
+}
+#imageContainer {
+  border: 2px solid black;
+  margin: 10px;
+  padding: 10px;
+  display: flex;
+  height: 300px;
+  justify-content: center;
+  align-items: center;
+}
+#shrinkGrow {
+  height: 100px;
+  width: 300px;
+  display: flex;
+  border: 2px solid black;
+}
+.box {
+  height: 50px;
+  width: 50px;
+  background-color: lightblue;
+  margin: 10px;
+  flex-shrink: 0;
+}
+#box2 {
+  flex-shrink: 1;
+  flex-grow: 1;
+}
+#mediaQueryContainer {
+  height: 50px;
+  width: 50px;
+  background-color: red;
+}
+@media screen and (min-width: 400px) {
+  #mediaQueryContainer {
+    background-color: blue;
+  }
+}
+@media screen and (max-width: 300px) {
+  #mediaQueryContainer {
+    background-color: green;
+  }
+}

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Learning CSS</title>
+    <style>
+      * {
+        color: black;
+        font-family: "Times New Roman", Times, serif;
+        margin: 0;
+        padding: 0;
+      }
+      h1 {
+        font-size: 20px;
+      }
+      #div1 {
+        background-color: lightblue;
+        height: 50px;
+        width: 50px;
+        padding: 2px;
+        margin: 5px;
+        border: 2px solid black;
+        border-radius: 10px 5px;
+        box-sizing: cotent-box; /* border-box is ome another option - counts everything, margin padding border */
+      }
+      #btn {
+        height: 70px;
+        width: 70px;
+        padding: 10px 15px;
+        margin: 10px;
+        border: 3px dotted red;
+        border-radius: 50px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Box model property</h1>
+    <div id="div1">Box Model</div>
+    <button id="btn">Click me</button>
+  </body>
+</html>

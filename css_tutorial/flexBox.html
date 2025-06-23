@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Learning CSS</title>
+    <link rel="stylesheet" href="index.css" />
+    <style>
+      #container {
+        height: 1000px;
+        width: 1000px;
+        background-color: palevioletred;
+        border: 3px solid black;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        /* flex-wrap: wrap; */
+        align-items: center; /* defines item's position in container */
+        /* align-content: center; defines space between items */
+      }
+      .box {
+        height: 150px;
+        width: 150px;
+        background-color: lightpink;
+        margin: 10px;
+        border: 2px solid black;
+        text-align: center;
+      }
+      #box4 {
+        order: 2;
+      }
+      #box3 {
+        align-self: end;
+        order: 3;
+      }
+      #box2 {
+        flex-shrink: 5; /*when the container size is less */
+        order: 1;
+      }
+      #box1 {
+        flex-grow: 1; /*when the container size is more */
+        order: 4;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Flexbox</h1>
+    <div id="container">
+      <div id="box1" class="box">Box1</div>
+      <div id="box2" class="box">Box2</div>
+      <div id="box3" class="box">Box3</div>
+      <div id="box4" class="box">Box4</div>
+    </div>
+  </body>
+</html>

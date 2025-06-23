@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Learning CSS</title>
+    <link rel="stylesheet" href="index.css" />
+    <style>
+      .box {
+        background-color: lightpink;
+        height: 100px;
+        width: 100px;
+      }
+      /* @media screen and (min-width: 250px) {
+        .box {
+          border: 5px solid darkblue;
+          background-color: cyan;
+        }
+      }
+      @media screen and (max-width: 700px) {
+        .box {
+          border: 7px solid darkgreen;
+        }
+      } */
+      @media screen and (min-width: 250px) and (max-width: 700px) {
+        .box {
+          border-radius: 50%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Media Query</h1>
+    <div class="box">Box1</div>
+  </body>
+</html>
