@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Functions</title>
+  </head>
+  <body>
+    <h1>Functions</h1>
+    <script>
+      let age = 21;
+      function printAge() {
+        console.log(`Your age is ${age}`);
+      }
+      printAge();
+      age = 76;
+      printAge();
+
+      function sum(a, b) {
+        return a + b;
+      }
+      console.log(3 + 6);
+
+      function greeting(name = "Pyaare") {
+        console.log(`Namaste ${name} uncle`);
+      }
+      greeting();
+    </script>
+  </body>
+</html>
