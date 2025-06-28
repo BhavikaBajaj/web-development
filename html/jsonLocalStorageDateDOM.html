@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Learning Javascript</title>
+  </head>
+  <body>
+    <h1>JSON, Local Storage, Date, DOM</h1>
+    <div class="my-div">This is a div</div>
+    <script>
+      //JSON
+      /*let product = {
+        name: "Tshirt",
+        price: 789,
+        rating: {
+          stars: 4.5,
+          numberOfReviews: 453,
+        },
+      };
+      console.log(typeof product);
+      console.log(product);
+      let str = JSON.stringify(product);
+      console.log(typeof str);
+      console.log(str);
+
+      let newProduct = JSON.parse(str);
+      console.log(typeof newProduct);
+      console.log(newProduct); */
+
+      //Local Storage
+      /*localStorage.setItem("Name", "Bhavika");
+      localStorage.setItem("LastName", "Bajaj");
+      console.log(localStorage.getItem("Name"));
+
+      let product = {
+        name: "Tshirt",
+        price: 789,
+        rating: {
+          stars: 4.5,
+          numberOfReviews: 453,
+        },
+      };
+
+      localStorage.setItem("product", JSON.stringify(product));
+      console.log(localStorage.getItem("product"));
+      let product2 = JSON.parse(localStorage.getItem("product"));
+      console.log(product2);
+
+      localStorage.removeItem("rpoduct");
+      localStorage.removeItem("poduct");
+      localStorage.clear();*/
+
+      //Date
+      /*let myDate = new Date();
+      console.log(myDate);
+      console.log(myDate.getTime());
+      console.log(myDate.getFullYear());
+      console.log(myDate.getDay());
+      console.log(myDate.getHours());
+      console.log(myDate.getMinutes());
+      console.log(myDate.getMilliseconds()); */
+
+      //DOM
+      let button = document.createElement("Button");
+      button.innerText = "Click Me";
+      document.querySelector(".my-div").appendChild(button);
+      document.querySelector(".my-div").removeChild(button);
+    </script>
+  </body>
+</html>
