@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Learning Javascript</title>
+  </head>
+  <body>
+    <h1>Array and Loops Practice</h1>
+    <script>
+      //task1
+      /*let arr1 = [5, 6];
+      console.log(arr1);
+      arr1.unshift(4);
+      arr1.push(7);
+      console.log(arr1);*/
+
+      //task2
+      /*function returnElement(arr, position) {
+        return arr[position - 1];
+      }
+      let arr2 = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+      console.log(arr2);
+      console.log(`Element at position 4 is ${returnElement(arr2, 4)}`);*/
+
+      //task3
+      /*function arrCopy(arr) {
+        return arr.slice(0, arr.length);
+      }
+      let arr3 = [4, 5, 6, 7];
+      let arrcopy = arrCopy(arr3);
+      arr3[0] = null;
+      console.log(arr3);
+      console.log(arrcopy);*/
+
+      //task4
+      /*function isPrime(num) {
+        for (let i = 2; i < num; i++) {
+          if (num % i === 0) {
+            return false;
+          }
+        }
+        return true;
+      }
+      let count = 0;
+      let num = 2;
+      while (true) {
+        if (isPrime(num)) {
+          console.log(num);
+          count++;
+          if (count >= 5) {
+            break;
+          }
+        }
+        num++;
+      }*/
+
+      //task5
+      /*for (let i = 10; i > 0; i--) {
+        console.log(i);
+      }*/
+
+      //task6
+      /*let arr6 = [1, -6, 5, 7, -98];
+      for (let i = 0; i < arr6.length; i++) {
+        if (arr6[i] < 0) {
+          continue;
+        }
+        console.log(arr6[i]);
+      }*/
+
+      //task7
+      /*let arr7 = ["Bhavika", "Bajaj", "is", "learning", "Javascript"];
+      let finalString = "";
+      for (let i = 0; i < arr7.length; i++) {
+        finalString += arr7[i] + " ";
+      }
+      console.log(finalString);
+      console.log(arr7.join(" "));*/
+    </script>
+  </body>
+</html>
