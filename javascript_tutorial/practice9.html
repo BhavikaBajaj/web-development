@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Learning Javascript</title>
+    <style>
+      .my-button {
+        height: 40px;
+        width: 100px;
+        font-size: 15px;
+        background-color: rgb(205, 41, 41);
+        color: white;
+        border: none;
+        border-radius: 4px;
+      }
+      .js-size-double {
+        height: 80px;
+        width: 200px;
+        font-size: 30px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Advance Functions Practice Exercise</h1>
+    <button class="my-button" onclick="setTimeout(doubleTheSize,2000)">
+      Subscribe1
+    </button>
+    <button class="my-button" id="button-2">Subscribe2</button>
+    <script>
+      //task1
+      let multiply = function (num1, num2) {
+        return num1 * num2;
+      };
+      console.log(multiply(2, 3));
+
+      //task2
+      function fn() {
+        return "Hi from function fn";
+      }
+      function runTwice(fn) {
+        console.log(fn);
+        console.log(fn);
+      }
+      runTwice(fn);
+
+      //task3
+      function doubleTheSize() {
+        let buttonElement = document.querySelector(".my-button");
+        buttonElement.classList.add("js-size-double");
+      }
+
+      //task4
+      function doubleTheSize2() {
+        buttonElement.classList.add("js-size-double");
+      }
+      let buttonElement = document.querySelector("#button-2");
+      buttonElement.addEventListener("click", (event) => {
+        setTimeout(doubleTheSize2, 2000);
+      });
+
+      //task5
+      let arr = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+      let sum = 0;
+      arr.forEach((num) => (sum += num));
+      console.log(sum);
+
+      //task6
+      let squares = arr.map((num) => num * num);
+      console.log(squares);
+    </script>
+  </body>
+</html>
